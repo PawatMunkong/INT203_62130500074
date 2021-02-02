@@ -1,0 +1,41 @@
+/* body, html {
+    font-size: 15px;
+    line-height: 25px;
+    color: #414141;
+    font-family: 'Noto Sans',sans-serif;
+    font-weight: 400;
+} */
+#search{
+    background: rgba(0,0,0,.2);
+    
+}
+.search2{
+    background: rgba(0,0,0,.3);
+}
+
+.video {
+    position: relative;
+    overflow: hidden;
+    max-height: 580px;
+}
+.sec {
+    padding: 90px 0 168px;
+    width: 100%;
+    float: left;
+    background-size: cover;
+    background-position: bottom;
+
+}
+.fonts{
+    color: #414141;
+}
+
+li.menubar a:hover{
+    border-bottom: 5px solid rgb(185, 22, 4);
+    padding-bottom: 16px;
+}
+
+.C{
+    position:absolute ;
+    left: 40%;
+}

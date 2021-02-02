@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SenbirdTea</title>
+
+    <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+    <!-- Using via Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- https://tailwindcss.com/docs/installation -->
+    <!-- Using Tailwind via CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+
+    <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+    <!-- Vue CDN -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Red stripe  -->
+    <!--use  Box alignment / Typography / Spacing -->
+
+    <nav class="flex items-center justify-end flex-wrap bg-red-700  p-1 pr-72">
+
+
+        <div class="ml-10 mr-10 font-inherit font-semibold text-base ">
+            <div id="labels" class="text-xs" style="color:azure ; ">Free Shipping On Orders $49+
+            </div>
+        </div>
+
+
+        <div class="flex flex-row  ">
+            <input id="search" class="text-xs " type="text" placeholder="Search item…">
+            <div class="search2 ">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                </svg>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- White stripe-->
+    <!--use Container / Box alignment / Effects  -->
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-center flex-wrap bg-white p-3  shadow-2xl ">
+
+            <div>
+                <a href="https://senbirdtea.com" class="logo "><img
+                        src="https://191ohi2x4mb3b0bwt2tgdwk1-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/logo.png"
+                        alt="" width="150" height="150"></a>
+
+            </div>
+            <div>
+                <ul class=" flex flex-row mr-10 font-inherit font-semibold text-base">
+                    <li class="menubar ml-11 mr-11 p-1  ">
+                        <a href="https://senbirdtea.com" class="text-gray-600 hover:text-gray-900 ">TEA</a>
+                    </li>
+                    <li class="menubar ml-11 mr-11 p-1  ">
+                        <a href="https://senbirdtea.com" class="text-gray-600 hover:text-gray-900">TEAWARE</a>
+                    </li>
+                    <li class="menubar ml-11 mr-11 p-1  ">
+                        <a href="https://senbirdtea.com" class="text-gray-600 hover:text-gray-900">ABOUT</a>
+                    </li>
+                    <li class="menubar ml-11 mr-11 p-1  ">
+                        <a href="https://senbirdtea.com" class="text-gray-600 hover:text-gray-900">LEARN</a>
+                    </li>
+                    <li class="menubar ml-11 mr-11 p-1  ">
+                        <a href="https://senbirdtea.com" class="text-gray-600 hover:text-gray-900">WHOLESALE</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="flex flex-row mr-10 font-inherit  text-xs ">
+                    <li class="ml-11  p-1">
+                        <a href="https://senbirdtea.com/my-account/" class="text-gray-600 hover:text-red-500"
+                            title="Login / Register">Sign Up / Log In</a>
+                    </li>
+                    <li class="pr-30 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 0 24 24" width="24">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path
+                                d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z" />
+                        </svg>
+                    </li>
+                    <li class="pl-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path
+                                d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z" />
+                        </svg>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </div>
+
+
+
+    <!-- Video -->
+    <video id="video-player" loop="" autoplay="" muted="" playsinline="" webkit-playsinline="" preload="auto"
+        width="100%" class="shadow-xl">
+
+        <source
+            src="https://191ohi2x4mb3b0bwt2tgdwk1-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/homepage_hero_video_1920X774.mp4"
+            type="video/mp4">
+
+        <source
+            src="https://191ohi2x4mb3b0bwt2tgdwk1-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/homepage_hero_video_1920X774.mp4"
+            type="video/ogv">
+
+    </video>
+
+    <!-- White  -->
+    <nav class=" justify-start bg-white pl-16 pb-24 ">
+        <div>
+            <img class="C absolute pl-80 " alt=""
+                src="https://191ohi2x4mb3b0bwt2tgdwk1-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/homepage-green-tea-leaves-copy.png">
+        </div>
+    </nav>
+
+    <!-- Gray bar at the bottom -->
+    <!-- use Typography / Effects  -->
+    <nav class="flex items-center justify-start flex-wrap bg-gray-100 pl-60 pb-24 font-inherit">
+        <div class="mt-20 flex flex-row">
+
+            <div>
+
+                <h1 class="fonts text-5xl  font-bold   ">ORGANIC JAPANESE TEA</h1>
+
+                <p class="text-2xl text-gray-900 text-opacity-25 font-medium  mt-4">From Kyoto to Shizuoka, Senbird
+                    brings you
+                    <br> the finest tea from local farms across Japan.</p>
+
+                <div class="flex flex-row mt-16">
+
+                    <div>
+
+                        <h4 class="text-2xl font-normal">NATURAL </h4>
+
+                        <h3 class="text-sm"> 自然そのまま <br>
+                            Pure, single-origin loose leaf tea with no <br>
+                            preservatives, added colors, or flavors. <br>
+                            All teas are JAS certified organic.
+                        </h3>
+                    </div>
+                    <div class="ml-6 ">
+                        <h4 class="text-2xl font-normal">AUTHENTIC </h4>
+
+                        <h3 class="text-sm">
+                            伝統を守り抜く<br>
+                            All of our teas are imported directly from <br>
+                            Japan’s tea farms, where traditional <br>
+                            farming and harvesting methods are <br>
+                            used.
+                        </h3>
+                    </div>
+                    <div class="ml-6">
+                        <h4 class="text-2xl font-normal">SMALL BATCH </h4>
+
+                        <h3 class="text-sm"> 新鮮さをお届け<br>
+                            Each unique, single-cultivar tea variety <br>
+                            is picked, prepared, and carefully <br>
+                            packed for optimal freshness.
+                        </h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
