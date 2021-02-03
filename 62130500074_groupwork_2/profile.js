@@ -6,7 +6,7 @@ const app = {
             role: 'UXUI Design',
             article: 55,
             followers: 555,
-            rating: '9.9',
+            ratings: '9.9',
             image: "./images/rew.png"
         }
     },
